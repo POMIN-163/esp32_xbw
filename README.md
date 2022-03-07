@@ -32,26 +32,30 @@
 	cd esp-idf
 	./install.sh
 	```
-	![-](Picture/install.png)
+
+![-](Picture/install.png)
 
 * 外部包含 ( 每次启动终端都要执行 )
 	```bash
 	. /root/esp-idf/export.sh
 	```
+
 * 编译 ( 本仓库采用 gnu make 进行编译 )
 	```bash
 	# cd 到仓库的 Code 目录
 	make -j8 all
 	```
+
 	![-](Picture/build.png)
 * 烧录 ( 端口号、烧录速率需要自己设置 )
 	```bash
 	. ${IDF_PATH}/add_path.sh
 	esptool.py --chip esp32 --port "/dev/ttyUSB0" --baud $((230400*4)) write_flash -fs 4MB 0x100000 "build/nesemu.bin"
 	```
+
 	![-](Picture/flash.png)
 
-    <!-- TODO 烧录图片 -->
+<!-- TODO 烧录图片 -->
 
 ## 感谢以下开源
 > * [FABGL](http://www.fabglib.org/)
