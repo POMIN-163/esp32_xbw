@@ -11,28 +11,5 @@ Objects/
 old_/
 _Download/
 
-*.bak
-*.ddk
-*.edk
-*.lst
-*.lnp
-*.mpf
-*.mpj
-*.obj
-*.omf
-*.o
-*.plg
-*.rpt
-*.tmp
-*.__i
-*.crf
-*.o
-*.i
-*.d
-*.tra
-*.dep
+*.old
 
-*.iex
-*.htm
-
-*.map

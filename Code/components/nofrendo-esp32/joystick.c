@@ -62,13 +62,13 @@ void IRAM_ATTR digitalWrite(uint8_t pin, uint8_t val)
       }
    }
 }
-
+// todo 读取手柄值
 int joystickReadInput()
 {
-   uint32_t clkPin = CONFIG_HW_JOYSTICK_CLK;
-   uint32_t latchPin = CONFIG_HW_JOYSTICK_LATCH;
-   uint32_t data1Pin = CONFIG_HW_JOYSTICK_DAT1;
-   uint32_t data2Pin = CONFIG_HW_JOYSTICK_DAT2;
+   uint32_t clkPin = CONFIG_HW_JOYSTICK_CLK;     // 27
+   uint32_t latchPin = CONFIG_HW_JOYSTICK_LATCH; // 32
+   uint32_t data1Pin = CONFIG_HW_JOYSTICK_DAT1;  // 33
+   uint32_t data2Pin = CONFIG_HW_JOYSTICK_DAT2;  // 26
    uint16_t key1 = 0;
    uint16_t key2 = 0;
    digitalWrite(latchPin, 1);

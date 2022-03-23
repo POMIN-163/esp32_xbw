@@ -1,0 +1,8 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=main\xbw.PrjPCB
+[Project2]
+ProjectPath=surface\surface.PrjPcb
+[Project3]
+ProjectPath=USBtoDB9\USBtoDB9.PrjPcb
